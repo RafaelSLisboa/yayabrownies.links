@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yayá Brownies | Links</title>
+
+  <style>
+    :root {
+      --marrom: #7a4a3a;
+      --texto: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #000;
+    }
+
+    .page {
+      max-width: 520px;
+      margin: 0 auto;
+      min-height: 100vh;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* IMAGEM SUPERIOR */
+    .top {
+      height: 42vh;
+      background: url("topo.jpg") center / cover no-repeat;
+    }
+
+    /* LINHA DIVISÓRIA */
+    .divider {
+      height: 2px;
+      background-color: var(--marrom);
+    }
+
+    /* FUNDO INFERIOR */
+    .bottom {
+      flex: 1;
+      position: relative;
+      padding-top: 130px; /* compensação da logo maior */
+      padding-bottom: 28px;
+      background: url("fundo.jpg") center / cover no-repeat;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    /* LOGO */
+    .logo-wrapper {
+      position: absolute;
+      top: calc(42vh - 145px); /* ajustado para novo tamanho */
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 3;
+    }
+
+    .logo-wrapper img {
+      width: 205px; /* LOGO MAIS EVIDENTE */
+      height: auto;
+      display: block;
+    }
+
+    /* CONTEÚDO */
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+      padding: 0 20px;
+    }
+
+    /* BOTÕES */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 18px;
+      border-radius: 999px;
+      background-color: var(--marrom);
+      color: var(--texto);
+      text-decoration: none;
+      font-weight: 600;
+      letter-spacing: 0.4px;
+      white-space: nowrap;
+      transition: transform 0.2s ease, opacity 0.2s ease;
+    }
+
+    .btn:hover {
+      opacity: 0.9;
+      transform: scale(1.03);
+    }
+
+    /* RODAPÉ */
+    .footer {
+      text-align: center;
+      font-size: 14px;
+      font-weight: 600;
+      color: #ffffff;
+      padding-top: 18px;
+    }
+
+    /* DESKTOP */
+    @media (min-width: 768px) {
+      .page {
+        max-width: 480px;
+      }
+
+      .logo-wrapper img {
+        width: 225px;
+      }
+
+      .footer {
+        font-size: 15px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+
+    <div class="top"></div>
+    <div class="divider"></div>
+
+    <!-- LOGO -->
+    <div class="logo-wrapper">
+      <img src="logo.png" alt="Yayá Brownies">
+    </div>
+
+    <!-- FUNDO + LINKS -->
+    <div class="bottom">
+
+      <div class="content">
+        <a class="btn" href="https://www.ifood.com.br/delivery/araucaria-pr/yaya-brownies-artesanais-e-acai-tindiquera/f7fbff6c-4151-4fe5-8836-59870a09d3cf" target="_blank">
+          DELIVERY ARAUCÁRIA
+        </a>
+
+        <a class="btn" href="https://wa.me/message/UORQT3Q2FA3SB1" target="_blank">
+          WHATS ARAUCÁRIA
+        </a>
+
+        <a class="btn" href="https://www.ifood.com.br/delivery/curitiba-pr/yaya-brownies-artesanais-cidade-industrial/90464248-2c05-4a0a-9df8-e379aad73bca" target="_blank">
+          DELIVERY CURITIBA
+        </a>
+
+        <a class="btn" href="https://wa.me/message/R4Z5JRBBXQKLD1" target="_blank">
+          WHATS CURITIBA
+        </a>
+      </div>
+
+      <!-- FRASE FINAL -->
+      <div class="footer">
+        @yayabrowniess – Os melhores brownies de Curitiba e região!!!
+      </div>
+
+    </div>
+
+  </div>
+</body>
+</html>
