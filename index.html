@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yaya' Brownies</title>
+
+  <!-- Fonte -->
+  <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Merienda', cursive;
+    }
+
+    body {
+      min-height: 100svh;
+      background: url("fundo.jpg") center / cover no-repeat;
+      display: flex;
+      justify-content: center;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 420px;
+      padding: 24px 16px 16px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* LOGO */
+    .logo {
+      width: 170px;
+      margin-bottom: 18px;
+    }
+
+    /* CIDADE */
+    .city {
+      margin-top: 26px;
+      margin-bottom: 14px;
+      text-align: center;
+      font-size: 20px;
+      letter-spacing: 1px;
+      color: #fff;
+      text-shadow: 0 2px 6px rgba(0,0,0,0.7);
+      width: 100%;
+    }
+
+    /* ITEM LINK */
+    .link-item {
+      position: relative;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 10px;
+    }
+
+    /* ÍCONE */
+    .link-item img {
+      position: absolute;
+      left: calc(50% - 140px);
+      width: 22px;
+      height: 22px;
+    }
+
+    /* BOTÃO */
+    .btn {
+      width: 62%;
+      max-width: 220px;
+      padding: 7px 10px;
+      background: #8a5526;
+      color: #fff;
+      text-decoration: none;
+      text-align: center;
+      border-radius: 18px;
+      font-size: 14px;
+      line-height: 1.2;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.35);
+      transition: transform 0.12s ease, box-shadow 0.12s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 5px 10px rgba(0,0,0,0.45);
+    }
+
+    /* EFEITO DE PRESS */
+    .btn:active {
+      transform: translateY(1px);
+      box-shadow: 0 1px 3px rgba(0,0,0,0.35);
+    }
+
+    /* RODAPÉ */
+    footer {
+      margin-top: auto;
+      padding-top: 18px;
+      font-size: 13px;
+      color: #fff;
+      text-align: center;
+      text-shadow: 0 1px 4px rgba(0,0,0,0.7);
+    }
+
+    /* DESKTOP */
+    @media (min-width: 768px) {
+      body {
+        align-items: center;
+      }
+
+      .container {
+        border-radius: 22px;
+        background: rgba(0,0,0,0.15);
+        padding: 28px 18px 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- LOGO -->
+    <img src="logo.png" alt="Yaya Brownies" class="logo">
+
+    <!-- ARAUCÁRIA -->
+    <div class="city">ARAUCÁRIA</div>
+
+    <div class="link-item">
+      <img src="ifood.png" alt="iFood">
+      <a href="https://www.ifood.com.br/delivery/araucaria-pr/yaya-brownies-artesanais-e-acai-tindiquera/f7fbff6c-4151-4fe5-8836-59870a09d3cf" class="btn">Peça no iFood</a>
+    </div>
+
+    <div class="link-item">
+      <img src="99food.png" alt="99Food">
+      <a href="https://oia.99app.com/dlp9/UlueR3?share_media=WHATSAPP" class="btn">Peça no 99Food</a>
+    </div>
+
+    <div class="link-item">
+      <img src="whatsapp.png" alt="WhatsApp">
+      <a href="https://wa.me/message/UORQT3Q2FA3SB1" class="btn">Fale com a gente</a>
+    </div>
+
+    <!-- CURITIBA -->
+    <div class="city">CURITIBA</div>
+
+    <div class="link-item">
+      <img src="ifood.png" alt="iFood">
+      <a href="https://www.ifood.com.br/delivery/curitiba-pr/yaya-brownies-artesanais-cidade-industrial/90464248-2c05-4a0a-9df8-e379aad73bca" class="btn">Peça no iFood</a>
+    </div>
+
+    <div class="link-item">
+      <img src="99food.png" alt="99Food">
+      <a href="#" class="btn">Em breve</a>
+    </div>
+
+    <div class="link-item">
+      <img src="whatsapp.png" alt="WhatsApp">
+      <a href="https://wa.me/message/R4Z5JRBBXQKLD1" class="btn">Fale com a gente</a>
+    </div>
+
+    <!-- RODAPÉ -->
+    <footer>
+      Os melhores brownies de Curitiba e região.
+    </footer>
+
+  </div>
+</body>
+</html>
