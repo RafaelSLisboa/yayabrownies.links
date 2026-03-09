@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yaya' Brownies</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Merienda',cursive;
+}
+
+body{
+min-height:100svh;
+display:flex;
+justify-content:center;
+
+background:
+linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.35)),
+url("fundo.jpg");
+
+background-size:cover;
+background-position:center;
+color:white;
+}
+
+/* CONTAINER */
+
+.container{
+width:100%;
+max-width:420px;
+display:flex;
+flex-direction:column;
+align-items:center;
+padding:28px 16px 22px;
+}
+
+/* LOGO */
+
+.logo{
+width:210px;
+margin-bottom:22px;
+filter:drop-shadow(0 6px 10px rgba(0,0,0,0.45));
+
+opacity:0;
+animation:fadeDown .6s ease forwards;
+}
+
+/* CIDADES */
+
+.city{
+font-size:21px;
+letter-spacing:2.5px;
+margin-top:14px;
+margin-bottom:12px;
+text-shadow:0 4px 10px rgba(0,0,0,.7);
+
+opacity:0;
+animation:fadeUp .6s ease forwards;
+}
+
+/* LINK ITEM */
+
+.link-item{
+position:relative;
+width:100%;
+display:flex;
+justify-content:center;
+margin-bottom:12px;
+
+opacity:0;
+animation:fadeUp .6s ease forwards;
+}
+
+/* ÍCONES */
+
+.link-item img{
+position:absolute;
+left:calc(50% - 120px);
+width:24px;
+height:24px;
+filter:drop-shadow(0 2px 4px rgba(0,0,0,0.5));
+}
+
+/* BOTÕES */
+
+.btn{
+width:60%;
+max-width:210px;
+padding:9px 12px;
+
+background:rgba(138,85,38,0.92);
+backdrop-filter:blur(3px);
+
+border-radius:18px;
+
+text-align:center;
+text-decoration:none;
+color:white;
+
+font-size:14px;
+
+box-shadow:
+0 6px 14px rgba(0,0,0,.35),
+inset 0 1px 0 rgba(255,255,255,.12);
+
+transition:
+transform .12s ease,
+box-shadow .12s ease,
+filter .12s ease;
+
+/* animação de respiro */
+animation:breath 4s ease-in-out infinite;
+}
+
+/* HOVER */
+
+.btn:hover{
+transform:translateY(-2px);
+box-shadow:
+0 10px 20px rgba(0,0,0,.45),
+inset 0 1px 0 rgba(255,255,255,.15);
+filter:brightness(1.05);
+}
+
+/* PRESS */
+
+.btn:active{
+transform:translateY(1px);
+box-shadow:0 3px 6px rgba(0,0,0,.35);
+}
+
+/* RODAPÉ */
+
+footer{
+margin-top:26px;
+font-size:13px;
+text-align:center;
+opacity:.95;
+text-shadow:0 3px 8px rgba(0,0,0,.75);
+
+opacity:0;
+animation:fadeUp .6s ease forwards;
+}
+
+/* ANIMAÇÕES */
+
+@keyframes fadeDown{
+from{opacity:0; transform:translateY(-10px);}
+to{opacity:1; transform:translateY(0);}
+}
+
+@keyframes fadeUp{
+from{opacity:0; transform:translateY(12px);}
+to{opacity:1; transform:translateY(0);}
+}
+
+/* respiração leve dos botões */
+
+@keyframes breath{
+0%{transform:scale(1)}
+50%{transform:scale(1.02)}
+100%{transform:scale(1)}
+}
+
+/* DELAYS PARA SEQUÊNCIA */
+
+.city:nth-of-type(1){animation-delay:.3s}
+.link-item:nth-of-type(1){animation-delay:.45s}
+.link-item:nth-of-type(2){animation-delay:.55s}
+.link-item:nth-of-type(3){animation-delay:.65s}
+
+.city:nth-of-type(2){animation-delay:.8s}
+.link-item:nth-of-type(4){animation-delay:.95s}
+.link-item:nth-of-type(5){animation-delay:1.05s}
+.link-item:nth-of-type(6){animation-delay:1.15s}
+
+footer{animation-delay:1.3s}
+
+/* DESKTOP */
+
+@media(min-width:768px){
+
+body{
+align-items:center;
+}
+
+.container{
+background:rgba(0,0,0,0.15);
+border-radius:24px;
+padding:34px 22px;
+backdrop-filter:blur(6px);
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<img src="logo.png" class="logo">
+
+<div class="city">ARAUCÁRIA</div>
+
+<div class="link-item">
+<img src="ifood.png">
+<a class="btn" href="https://www.ifood.com.br/delivery/araucaria-pr/yaya-brownies-artesanais-e-acai-tindiquera/f7fbff6c-4151-4fe5-8836-59870a09d3cf">Peça no iFood</a>
+</div>
+
+<div class="link-item">
+<img src="99food.png">
+<a class="btn" href="https://oia.99app.com/dlp9/UlueR3?share_media=WHATSAPP">Peça no 99Food</a>
+</div>
+
+<div class="link-item">
+<img src="whatsapp.png">
+<a class="btn" href="https://wa.me/message/UORQT3Q2FA3SB1">Fale com a gente</a>
+</div>
+
+<div class="city">CURITIBA</div>
+
+<div class="link-item">
+<img src="ifood.png">
+<a class="btn" href="https://www.ifood.com.br/delivery/curitiba-pr/yaya-brownies-artesanais-cidade-industrial/90464248-2c05-4a0a-9df8-e379aad73bca">Peça no iFood</a>
+</div>
+
+<div class="link-item">
+<img src="99food.png">
+<a class="btn" href="https://oia.99app.com/dlp9/GYzFDj?share_media=WHATSAPP">Peça no 99Food</a>
+</div>
+
+<div class="link-item">
+<img src="whatsapp.png">
+<a class="btn" href="https://wa.me/message/R4Z5JRBBXQKLD1">Fale com a gente</a>
+</div>
+
+<footer>
+Os melhores brownies de Curitiba e região.
+</footer>
+
+</div>
+
+</body>
+</html>
